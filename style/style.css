@@ -1,0 +1,142 @@
+
+*{
+    margin:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sedgwick+Ave+Display&display=swap');
+
+#top-nav {
+    overflow: hidden;
+    background-color: rgb(242, 80, 123);
+    padding-left: 35%;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+#top-nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+#hero-image{
+    background-image: url('../img/138.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-size: cover;
+}
+
+.hero-text{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 100px;
+    color:rgb(5, 91, 166);
+}
+
+#description{
+    padding-top: 20px;
+    font-family: 'Permanent Marker', cursive;
+    
+    background-image: linear-gradient(white, rgb(242, 203, 5));
+}
+
+#gallery{
+    padding-top: 20px;
+    background-image: linear-gradient(rgb(242, 203, 5), rgb(5, 91, 166));
+}
+
+.galeria{
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column{
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 20%;
+}
+
+footer{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    text-align: center;
+    background-color: rgb(5, 91, 166);
+    color:white;
+}
+
+a:link{
+    text-decoration: underline;
+    color:white;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a:visited{
+    color:white;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        margin:20px;
+    }
+    #top-nav {
+        margin: 20px;
+    }
+    #top-nav a{
+        text-align: left;
+        padding: 10px 10px;
+    }
+    #description{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #gallery{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    #hero-image{
+        margin:20px
+    }
+}
+
+@media screen and (max-width: 900px){
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    #hero-image{
+        padding-right: 500px;
+    }
+}
+
+
+
+
+
+
